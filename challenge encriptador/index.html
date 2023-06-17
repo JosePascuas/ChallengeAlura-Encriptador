@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="nuevoestilo.css">
+</head>
+
+<body>
+  <header>
+  <img class="logo-alura" src="imagen/Logo.svg" alt="logo-alura">
+  </header>
+  <main>
+      <div class="textarea"><textarea class= "areaTexto" placeholder="¡Ingresa el texto aquí!"></textarea>
+      </div>
+
+      <div class="mensaje-informativo">
+        <p class="mensaje"><img class="imagen-advertencia" src="imagen/exclamation-circle-fill.svg" alt="Exclamacion">Solo letras minúsculas y sin acentos</p>
+      </div>
+
+      <div class="posicion-botones">
+        <button class="encriptar" onclick="encriptar()">Encriptar</button>
+        <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+      </div>
+
+  </main>
+  <aside class="cuadro-lateral">
+    <div>
+        <div class="mensaje-no-encontrado">
+            <div id="interiorCuadro">
+              <img class="imagen-muñeco" src="imagen/Muñeco.svg" alt="muñeco">
+              <P>¡Ningún mensaje fue encontrado!</h1>
+              <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+          <div class="resultado-texto" id="resultadoTexto">
+            <textarea readonly="readonly"  id="myTextarea" class="resultado-texto" name="resultado-texto" id="" cols="30" rows="10"></textarea>
+            <button class="btn_copiar" id="btnCopiar" onclick="btnCopiar()">Copiar</button> 
+          </div>
+        </div>
+        
+    </div>
+    </aside>
+  <footer>
+    <h1>Realizado por Jose Miguel Pascuas</h1>
+    <p>challenge alura encriptador</p>
+  </footer>  
+  <script src="logica.js"></script>
+</body>
+</html>
