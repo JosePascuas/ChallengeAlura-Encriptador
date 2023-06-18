@@ -125,6 +125,12 @@ main{
   height: 180px;
 }
 
+.resultado-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .resultado-texto>textarea{
   position: absolute;
   left: 4%;
@@ -143,8 +149,8 @@ main{
 
 .btn_copiar{
   position: relative;
-  margin: 0 10px 0 10px;
-  width: 100px;
+  margin:0 auto;
+  max-width: 100px;
   height: 33px;
   border: 1px solid;
   border-radius: 20px;
@@ -188,7 +194,8 @@ footer{
     height: 5%;
   }
   main{
-    left: 20%;
+    width: 65%;
+    left: 16%;
   } 
   ::placeholder{
     text-align: center;
@@ -208,15 +215,17 @@ footer{
   }
 
   .resultado-texto>textarea{
-    width: 82%;
+    width: 88%;
     height: 45%;
   }
 
   .btn_copiar{
-    position: absolute;
-    margin: 0px 0px 0px 0px;
-    top: 152px;
-    left: 40%;
+    width: 100px;
+    margin: 0;
+    position: relative;
+    top: 70px;
+    left: unset;
+    transform: unset;
   }
 
   footer{
